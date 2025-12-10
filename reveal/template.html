@@ -1,24 +1,47 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>No Name</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="dist/reveal.css">
-    <link rel="stylesheet" href="dist/theme/white.css">
-    <link rel="stylesheet" href="plugin/highlight/zenburn.css">
-    <link rel="stylesheet" href="src/mysetting.css">
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <section>
-            Write something here.
-        </section>
-        
-      </div>
+
+<head>
+  <meta charset="utf-8">
+  <title>No Name</title>
+  <link rel="icon" href="https://cdn.shujie.cc/reveal/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.shujie.cc/reveal/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.shujie.cc/reveal/dist/theme/white.css">
+  <link rel="stylesheet" href="https://cdn.shujie.cc/reveal/plugin/highlight/zenburn.css">
+  <link rel="stylesheet" href="https://cdn.shujie.cc/reveal/src/mysetting.css">
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        测试 ABCDE
+      </section>
+
+      <section>
+        <pre><code data-trim data-noescape class="language-cpp" data-line-numbers="3|7|5-6"><script type="text/template">
+void solve()
+{
+    auto fib = [&](this auto self, int n)
+    { 
+        if(n == 0) return 0;
+        if(n == 1) return 1;
+        return self(n-2) + self(n-1);
+    };
+    for(int i=0; i<=10; i++)
+    {
+        cout<<fib(i)<<"\n";
+    }
+    return;
+}
+  
+        </script></code></pre>
+      </section>
+
+
     </div>
-    <!-- 用户文件截止 -->
+  </div>
+  <!-- 用户文件截止 -->
 
 
 
@@ -27,44 +50,38 @@
 
 
 
-    
-    <!-- 主库 -->
-    <script src="dist/reveal.js"></script>
 
-    <!-- 插件 -->
-    <script src="plugin/markdown/markdown.js"></script>
-    <script src="plugin/highlight/highlight.js"></script>
-    <script src="plugin/notes/notes.js"></script>
-    <script src="plugin/zoom/zoom.js"></script>
-    <script src="plugin/search/search.js"></script>
-    <!-- <script src="plugin/fullscreen/fullscreen.js"></script> -->
-    <!-- <script src="plugin/menu/menu.js"></script> -->
-    <script src="plugin/math/math.js"></script>
-    <!-- <script src="plugin/autoanimate/autoanimate.js"></script> -->
+  <!-- 主库 -->
+  <script src="https://cdn.shujie.cc/reveal/dist/reveal.js"></script>
 
-    <script src="plugin/reveald3.js"></script>
+  <!-- 插件 -->
+  <script src="https://cdn.shujie.cc/reveal/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.shujie.cc/reveal/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.shujie.cc/reveal/plugin/notes/notes.js"></script>
+  <script src="https://cdn.shujie.cc/reveal/plugin/zoom/zoom.js"></script>
+  <script src="https://cdn.shujie.cc/reveal/plugin/search/search.js"></script>
+  <script src="https://cdn.shujie.cc/reveal/plugin/math/math.js"></script>
+  <script src="https://cdn.shujie.cc/reveal/plugin/reveald3.js"></script>
 
-    <!-- 初始化 -->
-    <script>
-      Reveal.initialize({
-        hash: true,
-        slideNumber: true,
-        controls: true,
-        progress: true,
-        center: true,
-        plugins: [
-          RevealMarkdown,
-          RevealHighlight,
-          RevealNotes,
-          RevealZoom,
-          RevealSearch,
-          // RevealFullscreen,
-          // RevealMenu,
-          RevealMath,
-          // RevealAutoAnimate
-          Reveald3,
-        ]
-      });
-    </script>
-  </body>
+  <!-- 初始化 -->
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: true,
+      controls: true,
+      progress: true,
+      center: true,
+      plugins: [
+        RevealMarkdown,
+        RevealHighlight,
+        RevealNotes,
+        RevealZoom,
+        RevealSearch,
+        RevealMath,
+        Reveald3,
+      ]
+    });
+  </script>
+</body>
+
 </html>
