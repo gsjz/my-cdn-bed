@@ -38,7 +38,8 @@ code {
 }
 
 :root {
-  --r-main-font: "JetBrains Mono",
+  --r-main-font: 
+    /* "JetBrains Mono", */
     "Noto Serif SC",
     "Noto Sans SC",
     "PingFang SC",
