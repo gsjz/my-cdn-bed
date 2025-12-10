@@ -39,6 +39,7 @@ code {
 
 :root {
   --r-main-font: "JetBrains Mono",
+    "Noto Serif SC",
     "Noto Sans SC",
     "PingFang SC",
     "Microsoft YaHei",
@@ -48,7 +49,7 @@ code {
 
 .reveal pre,
 .reveal code {
-  font-family: "JetBrains Mono",
+  font-family: "JetBrains Mono", "Noto Serif SC",
     ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
 }
